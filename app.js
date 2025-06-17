@@ -13,5 +13,5 @@ app.listen(PORT, (error) =>{
 
 app.get('/', (req, res)=>{
     res.status(200);
-    res.send("Welcome to My App");
+    res.send("Welcome to My App 2");
 });
