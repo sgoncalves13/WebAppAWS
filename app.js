@@ -1,7 +1,9 @@
 const express = require('express');
-
+const routes = require('./routes/index.js');
 const app = express();
 const PORT = 3000;
+
+app.use(routes);
 
 app.listen(PORT, (error) =>{
     if(!error)
@@ -10,8 +12,3 @@ app.listen(PORT, (error) =>{
         console.log("Error occurred, server can't start", error);
     }
 );
-
-app.get('/', (req, res)=>{
-    res.status(200);
-    res.send("Welcome to My App 2");
-});
