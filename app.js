@@ -10,6 +10,7 @@ app.use(cors({
   origin: 'http://localhost:3000'
 }));
 
+app.use(routes);
 
 app.listen(PORT, (error) =>{
     if(!error)
